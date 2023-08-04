@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Routes, Route } from 'react-router-dom'; // Import the Routes element
+import { Routes, Route } from 'react-router-dom'; 
 import './components/Navbar/Navbar.css';
 import './components/Contact/ContactUs.css';
 
@@ -10,6 +10,7 @@ import AboutUs from './components/About/AboutUs';
 import AllJobs from './components/AllJobs/AllJobs';
 import ContactUs from './components/Contact/ContactUs';
 import BookDemo from './components/BookDemo';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/bookdemo" element={<BookDemo />} />
         
       </Routes>
+      <Footer/>
     </>
   );
 };
